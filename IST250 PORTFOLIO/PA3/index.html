@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sonara - Pricing Plans</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #fdbb2d 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        .main-container {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+        }
+
+        h1 {
+            color: #1e3c72;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .free-header {
+            background-color: #2a5298;
+            color: white;
+            padding: 15px;
+        }
+
+        .premium-header {
+            background-color: #ff8c00;
+            color: white;
+            padding: 15px;
+        }
+
+        .family-card {
+            border: 3px solid #ff8c00;
+        }
+
+        .price {
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 5px 0;
+        }
+
+        footer {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            margin-top: 40px;
+            border-radius: 15px;
+        }
+
+        .table-title {
+            text-align: center;
+            margin: 40px 0 20px 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <a href="../index.html"
+        style="color: white; background-color: #4a90c2; padding: 10px 15px; text-decoration: none; display: inline-block; margin: 10px; border-radius: 5px;">←
+        Back to Portfolio</a>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <img src="Sonara2.1.png" alt="Sonara" height="80">
+                </div>
+                <div class="col-6">
+                    <p style="text-align: right; margin-top: 15px;">
+                        <a href="#">Premium</a> |
+                        <a href="#">Help</a> |
+                        <a href="#">Download</a> |
+                        <a href="#">Sign Up</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container main-container">
+
+
+        <h1>Pick Your Sonara Plan</h1>
+        <p class="subtitle">Stream millions of songs ad-free. Listen offline. Cancel anytime.</p>
+
+
+        <div class="row">
+
+            <!-- Free Plan Card -->
+            <div class="col-4">
+                <div class="card">
+                    <div class="free-header">
+                        <h4>Free</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="price">$0<small>/mo</small></p>
+                        <ul>
+                            <li>Unlimited music with ads</li>
+                            <li>Shuffle play only</li>
+                            <li>Standard audio quality</li>
+                            <li>Listen on 1 device</li>
+                            <li>Online streaming only</li>
+                        </ul>
+                        <button class="btn btn-outline-primary">Sign up free</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premium Plan Card -->
+            <div class="col-4">
+                <div class="card">
+                    <div class="premium-header">
+                        <h4>Premium</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="price">$10.99<small>/mo</small></p>
+                        <ul>
+                            <li>Ad-free listening</li>
+                            <li>Download music offline</li>
+                            <li>High quality audio</li>
+                            <li>Listen on any device</li>
+                            <li>Skip unlimited songs</li>
+                            <li>Playlist customization</li>
+                        </ul>
+                        <button class="btn btn-primary">Get Premium</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Family Plan Card -->
+            <div class="col-4">
+                <div class="card family-card">
+                    <div class="card-header bg-primary text-white">
+                        <h4>Family</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="price">$16.99<small>/mo</small></p>
+                        <ul>
+                            <li>All Premium features</li>
+                            <li>Up to 6 family accounts</li>
+                            <li>Individual profiles</li>
+                            <li>Parental controls</li>
+                            <li>Family Mix playlist</li>
+                            <li>Lossless audio quality</li>
+                            <li>Best value!</li>
+                        </ul>
+                        <button class="btn btn-primary">Get Family Plan</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Compare Plans Table -->
+        <h2 class="table-title">Compare plans</h2>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Free</th>
+                    <th>Premium</th>
+                    <th>Family</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ad-free listening</td>
+                    <td></td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+                <tr>
+                    <td>Offline downloads</td>
+                    <td></td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+                <tr>
+                    <td>High quality audio</td>
+                    <td></td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+                <tr>
+                    <td>Multiple accounts</td>
+                    <td></td>
+                    <td></td>
+                    <td>✓</td>
+                </tr>
+                <tr>
+                    <td>Unlimited skips</td>
+                    <td></td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+                <tr>
+                    <td>Parental controls</td>
+                    <td></td>
+                    <td></td>
+                    <td>✓</td>
+                </tr>
+                <tr>
+                    <td>Lossless audio</td>
+                    <td></td>
+                    <td></td>
+                    <td>✓</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <p>&copy; 2025 Sonara Music</p>
+                </div>
+                <div class="col-3">
+                    <h5>Premium</h5>
+                    <p><a href="#">Individual</a></p>
+                    <p><a href="#">Family</a></p>
+                    <p><a href="#">Student</a></p>
+                    <p><a href="#">Free trial</a></p>
+                </div>
+                <div class="col-3">
+                    <h5>Support</h5>
+                    <p><a href="#">Help center</a></p>
+                    <p><a href="#">Contact us</a></p>
+                    <p><a href="#">Community</a></p>
+                    <p><a href="#">Web player</a></p>
+                </div>
+                <div class="col-3">
+                    <h5>Company</h5>
+                    <p><a href="#">About</a></p>
+                    <p><a href="#">Jobs</a></p>
+                    <p><a href="#">Privacy</a></p>
+                    <p><a href="#">Terms</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

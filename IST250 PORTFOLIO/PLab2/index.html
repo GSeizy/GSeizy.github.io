@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PL2 - Interactive Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<a href="../index.html"
+    style="color: white; background-color: #4a90c2; padding: 10px 15px; text-decoration: none; display: inline-block; margin: 10px; border-radius: 5px;">←
+    Back to Portfolio</a>
+
+<body>
+    <div class="heading-box">
+        <h1 id="greeting"><u>Hello User!</u></h1>
+        <p id="message">[ YOUR MESSAGE COULD APPEAR HERE ]<br><br>
+            &#8595 Complete the interactive boxes below to make changes to this header &#8595</p>
+
+    </div>
+    <div class="container">
+        <div class="customization-section">
+            <h2>Please Begin Here</h2>
+            <div class="form-group">
+                <label for="nameInput">What Is Your Name User? :</label>
+                <input type="text" id="nameInput" placeholder="Your Name Here">
+            </div>
+
+            <div class="form-group">
+                <label for="messageInput">What Do You Wish Your Message To Be? :</label>
+                <input type="text" id="messageInput" placeholder="Think of something interesting">
+            </div>
+
+            <div class="form-group">
+                <label for="colorSelect">Lastly, choose a new background color:</label>
+                <select id="colorSelect">
+                    <option value="#FFFFFF">White</option>
+                    <option value="#FFA500">Orange</option>
+                    <option value="#228B22">Forest Green</option>
+                    <option value="#F0E68C">Khaki</option>
+                    <option value="#DC143C">Crimson</option>
+                    <option value="#EE82EE">Violet</option>
+                    <option value="#4682B4">Cyan</option>
+                </select>
+            </div>
+
+            <button onclick="updatePage()">Click Here to Test Your Changes!</button>
+        </div>
+
+        <div class="todo-section">
+            <h2>Try Out this Handy To-Do List</h2>
+
+            <div class="form-group">
+                <label for="todoInput">Add a To-Do Task:</label>
+                <input type="text" id="todoInput" placeholder="Enter a Task Here">
+            </div>
+
+            <button onclick="addTodoItem()">+ Add Task to List</button>
+
+            <ol id="todoList"></ol>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

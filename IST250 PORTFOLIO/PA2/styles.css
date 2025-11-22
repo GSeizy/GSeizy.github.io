@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    padding: 20px;
+}
+
+/* Grid Container */
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr 100px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 90vh;
+}
+
+/* Grid Areas */
+.header {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 2 / 4;
+}
+
+.content-1 {
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+
+.content-2 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.content-3 {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.footer {
+    grid-column: 1 / 4;
+    grid-row: 4;
+}
+
+.header,
+.sidebar,
+.content-1,
+.content-2,
+.content-3,
+.footer {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid #0f3460;
+    filter: drop-shadow(0 4px 8px rgba(0, 255, 255, 0.2));
+}
+
+h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #00d4ff 0%, #6607a5 70%);
+    filter: brightness(1.1) drop-shadow(0 4px 8px rgba(0, 255, 255, 0.3));
+}
+
+.header h1 {
+    font-family: 'Audiowide', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 15px;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Sidebar */
+.sidebar {
+    background: linear-gradient(135deg, #00d4ff 0%, #6607a5 70%);
+}
+
+.sidebar h2 {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #45484dd0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.stat-item {
+    background: #00000031;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #00d4ff;
+    transform: skewX(-2deg);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #f4f5f7;
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    font-family: 'Electrolize', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00d4ff;
+}
+
+/* Content 1 - Main Workout */
+.content-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-1 h2 {
+    color: #00d4ff;
+    margin-bottom: 15px;
+}
+
+.workout-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 12px;
+    border: 2px solid #ff6b35;
+    text-align: center;
+}
+
+.workout-card h3 {
+    font-size: 1.8rem;
+    color: #ff6b35;
+    margin-bottom: 10px;
+}
+
+.workout-time {
+    font-size: 1.2rem;
+    color: #00d4ff;
+    margin-bottom: 15px;
+}
+
+.workout-desc {
+    color: #aaaaaa;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.start-btn {
+    font-family: 'Teko', sans-serif;
+    background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease;
+}
+
+.start-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Content 2 - Calories */
+.content-2 {
+    text-align: center;
+}
+
+.content-2 h2 {
+    color: #00d4ff;
+    margin-bottom: 20px;
+}
+
+.calories-display {
+    margin-bottom: 20px;
+}
+
+.big-number {
+    font-family: 'Electrolize', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #ff6b35;
+    line-height: 1;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    10% {
+        transform: rotateY(180deg);
+    }
+
+    50% {
+        transform: rotateY(180deg);
+    }
+
+    60% {
+        transform: rotateY(360deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.unit {
+    font-size: 1.2rem;
+    color: #8899aa;
+    margin-top: 5px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 91%;
+    background: linear-gradient(90deg, #00d4ff 0%, #0099ff 100%);
+    border-radius: 10px;
+}
+
+.goal-text {
+    color: #8899aa;
+    font-size: 0.9rem;
+}
+
+/* Content 3 - Goals */
+.content-3 {
+    text-align: center;
+}
+
+.content-3 h2 {
+    color: #00d4ff;
+    margin-bottom: 20px;
+}
+
+.goal-display {
+    margin-bottom: 15px;
+}
+
+.achievement-badge {
+    background: rgba(255, 215, 0, 0.1);
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid #63d8e744;
+    max-width: 200px;
+    margin: 0 auto;
+
+}
+
+.badge-icon {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 0 auto 8px auto;
+    animation: flip 6s ease-in-out infinite;
+}
+
+.achievement-badge p {
+    color: #00ffc8;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2d2d44 0%, #1a1a2e 100%);
+    gap: 10px;
+}
+
+.footer p {
+    font-family: 'Satisfy', cursive;
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+.footer .date {
+    font-family: 'Rajdhani', sans-serif;
+    color: #00d4ff;
+    font-style: normal;
+    font-size: 0.9rem;
+}

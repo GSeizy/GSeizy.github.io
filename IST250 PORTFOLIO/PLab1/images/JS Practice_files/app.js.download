@@ -1,0 +1,10 @@
+userInput = prompt("enter some text here or whatever")
+console.log(userInput)
+
+console.log("LETSS LEARNNN THIS JAVASCRIPT YOOOO")
+
+let randoNum = Math.floor(Math.random() + 5);
+
+if (randoNum <= 2) {
+    console.log(randoNum + "\nNumber is less than zero.five");
+}

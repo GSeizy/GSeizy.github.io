@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Electrolize&family=Rajdhani:wght@300;400;500;600;700&family=Saira+Stencil+One&family=Satisfy&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<a href="../index.html"
+    style="color: white; background-color: #333; padding: 10px 15px; text-decoration: none; display: inline-block; margin: 10px; border-radius: 5px;">←
+    Back to Portfolio</a>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>FITNESS DASHBOARD</h1>
+        </header>
+
+        <aside class="sidebar">
+            <h2>Weekly Stats</h2>
+            <div class="stat-item">
+                <p class="stat-label">Current Streak</p>
+                <p class="stat-value">7 Days</p>
+            </div>
+            <div class="stat-item">
+                <p class="stat-label">Total Workouts</p>
+                <p class="stat-value">24</p>
+            </div>
+            <div class="stat-item">
+                <p class="stat-label">This Week</p>
+                <p class="stat-value">5/7</p>
+            </div>
+        </aside>
+
+        <main class="content-1">
+            <h2>Today's Workout</h2>
+            <div class="workout-card">
+                <h3>HIIT Training</h3>
+                <p class="workout-time">45 minutes</p>
+                <p class="workout-desc">High intensity interval training with cardio and strength exercises</p>
+                <button class="start-btn">START WORKOUT</button>
+            </div>
+        </main>
+
+        <section class="content-2">
+            <h2>Calories Burned</h2>
+            <div class="calories-display">
+                <p class="big-number">547</p>
+                <p class="unit">(kcal)</p>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <p class="goal-text">Goal: 600 kcal</p>
+        </section>
+
+        <section class="content-3">
+            <h2>Weekly Goal</h2>
+            <div class="goal-display">
+                <p class="big-number">5/7</p>
+                <p class="unit">workouts</p>
+            </div>
+            <div class="achievement-badge">
+                <img src="mdi--goal.png" alt="Goal Achievement" class="badge-icon">
+                <p>Almost There!</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>"The only bad workout is the one that didn't happen."</p>
+            <p class="date">Saturday, November 08, 2025</p>
+        </footer>
+    </div>
+</body>
+
+</html>
