@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCBuilderBase - Help & Troubleshooting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="CSS/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span id="typed-text"></span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="parts.html">Parts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="building.html">Building</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="help.html">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <button id="darkModeToggle" class="btn btn-outline-light ms-3">Dark Mode</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <section id="help-intro" class="mb-5">
+            <h1>Troubleshooting Help</h1>
+            <p>Sometimes things don't go as planned with your build. That's okay though as most issues have simple
+                solutions. Here are some common problems and ways to fix them.</p>
+        </section>
+
+        <div class="help-image-container">
+            <img src="images/help-image.jpg" alt="Troubleshooting PC" class="page-image">
+        </div>
+
+        <section id="common-problems">
+            <h2>Common Problems</h2>
+
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <h3>PC won't turn on</h3>
+                    <ul>
+                        <li>Check that the power supply switch on the back is set to "I" (on) instead of "O" (off)</li>
+                        <li>Make sure the power cable is plugged into the wall and the PSU and is not loose at all at
+                            either port</li>
+                        <li>Verify the 24-pin motherboard connector is fully seated and has no bent pins</li>
+                        <li>Check that the power button is connected correctly and the cables to it are snug and intact
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="problem-card">
+                    <h3>PC turns on but no display</h3>
+                    <ul>
+                        <li>Make sure your monitor is connected to the GPU input slots, not the motherboard slots</li>
+                        <li>Check that the GPU is fully seated in the PCIe slot</li>
+                        <li>Verify the GPU power cables are connected snugly</li>
+                        <li>Ensure RAM sticks are clicked in and seated properly</li>
+                        <li>Check that latest GPU drivers are installed</li>
+                    </ul>
+                </div>
+
+                <div class="problem-card">
+                    <h3>PC keeps restarting or crashes</h3>
+                    <ul>
+                        <li>Check CPU cooler is mounted properly and has thermal paste</li>
+                        <li>Make sure all power connections are secure</li>
+                        <li>Test with one RAM stick at a time to rule out faulty memory</li>
+                        <li>Check for any signs of overheating (broken fans, cooling, etc...)</li>
+                    </ul>
+                </div>
+
+                <div class="problem-card">
+                    <h3>BIOS doesn't detect storage drive</h3>
+                    <ul>
+                        <li>Check SATA data and power cables are connected</li>
+                        <li>Try a different SATA port on the motherboard, you may have a bad one</li>
+                        <li>For M.2 drives, make sure it's in the correct slot and seated properly</li>
+                    </ul>
+                </div>
+
+                <div class="problem-card">
+                    <h3>USB ports not working</h3>
+                    <ul>
+                        <li>Check that the USB headers are connected to the motherboard</li>
+                        <li>Try the ports on the back of the motherboard (if they work, it's likely a connection issue)
+                        </li>
+                        <li>Install motherboard drivers after Windows is set up</li>
+                    </ul>
+                </div>
+
+                <div class="problem-card">
+                    <h3>Bought used parts? Extra tips</h3>
+                    <ul>
+                        <li>Always test used parts as soon as possible! Especially depending on your return window</li>
+                        <li>If a used GPU crashes or shows visual artifacts, it is a likely sign that it is beginning to
+                            fail</li>
+                        <li>Used PSUs can be risky, if your system is unstable, the PSU is a good place to check</li>
+                        <li>Check for bent pins on used CPU's and motherboards before installing</li>
+                        <li>Reset the BIOS to default settings on used motherboards</li>
+                        <li>Always clean out any dust from used components BEFORE installing them</li>
+                        <li>If buying used RAM, run a memory test in the BIOS (like MemTest86 via a USB drive from
+                            PassMark)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="help-contact-link">Didn't find what you needed here? Visit our <a href="contact.html">Contact
+                    Page</a> to reach out for more help!</p>
+        </section>
+    </main>
+    <button id="backToTop" title="Back to Top">&uarr;</button>
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2025 PCBuilderBase | Created by Jacob Raposa for IST250</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

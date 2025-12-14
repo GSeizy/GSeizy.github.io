@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCBuilderBase- Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="CSS/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span id="typed-text"></span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="parts.html">Parts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="building.html">Building</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="help.html">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <button id="darkModeToggle" class="btn btn-outline-light ms-3">Dark Mode</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <section id="contact-intro" class="mb-5 text-center">
+            <h1>Contact Us</h1>
+            <p>Unsure about something in your build? Need some more advice? Suggestions to improve the site?</p>
+            <p>Use the form below to send a message and we'll get back to you as soon as possible!</p>
+        </section>
+
+        <section id="contact-form">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Have questions about building your PC? Not sure which parts to choose? Running into issues with
+                        your build?</p>
+                    <p>Fill out the form and I'll get back to you as soon as possible with advice and guidance.</p>
+                    <p>Whether you're a first-time builder or looking to upgrade your current setup, I'm here to help
+                        you through the process.</p>
+                    <img src="images/contact-image.jpg" alt="Contact us" class="contact-image">
+                </div>
+                <div class="contact-form-box">
+                    <form id="buildForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <select class="form-select" id="subject" required>
+                                <option value="" selected disabled>Select a topic...</option>
+                                <option value="parts">Question about parts</option>
+                                <option value="building">Help with building</option>
+                                <option value="troubleshooting">Troubleshooting issue</option>
+                                <option value="suggestion">Suggestion</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    <div id="formMessage" class="mt-3"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <button id="backToTop" title="Back to Top">&uarr;</button>
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2025 PCBuilderBase | Created by Jacob Raposa for IST250</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
